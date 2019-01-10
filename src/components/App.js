@@ -20,7 +20,6 @@ class App extends React.Component {
     })
   }
   setPetsState = pets => {
-    console.log('setPetsState')
     this.setState({
       pets: pets,
     })
