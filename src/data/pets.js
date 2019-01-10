@@ -6,7 +6,7 @@ const allPets = [
     age: 4,
     weight: 1,
     name: 'Trident',
-    isAdopted: false,
+    isAdopted: true,
   },
   {
     id: '2c902312-dfa3-446f-8b4b-5e115170d807',
@@ -314,10 +314,11 @@ const allPets = [
     name: 'Hennessy',
     isAdopted: false,
   },
-];
+]
 
-export const getAll = () => allPets;
+export const getAll = () => allPets
 
-export const getByType = type => allPets.filter(pet => pet.type === type);
+export const getByType = type => allPets.filter(pet => pet.type === type)
 
-export const getBetweenAge = (from, to) => allPets.filter(pet => pet.age >= from && pet.age <= to);
+export const getBetweenAge = (from, to) =>
+  allPets.filter(pet => pet.age >= from && pet.age <= to)
